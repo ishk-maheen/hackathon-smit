@@ -19,19 +19,11 @@ p{
     flex-wrap: wrap;
     color: #333;
 }
-.hero-content{
-    width: 500px;
-    /* border: 2px solid; */
-}
-.hero-content h1{
+
+.hero h1{
     color: #181e4b;
     font-family: serif;
     line-height: 1;
-}
-.hero-button{
-    display: flex;
-    flex-wrap: wrap;
-    text-align: center;
 }
 .category h6{
     color: #5e6282;
@@ -152,9 +144,7 @@ p{
 /* contact */
 .contact {
   background-color:#F9F7FE;
-  margin-top: 20px;
-  margin-left: 300px;
-  width: 1000px;
+  width: 800px;
   border-radius: 80px 20px 20px 20px;
   height: 300px;
   padding: 60px 40px;
@@ -367,13 +357,24 @@ input{
 @media (max-width: 768px) {
     .hero image{
         width: 400px;
+        margin: auto;
 
     }
-
-
+    .hero-buttons{
+        justify-content: center;
+    }
+    
     .hero, .category, .destination,.booking{
         justify-content: center;
         text-align: center;
         flex-direction: column;
     }
+}
+
+@media (max-width: 605px) {
+    .hero image{
+        width: 300px;
+    
+    }
+
 }
